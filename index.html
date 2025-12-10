@@ -44,16 +44,21 @@
           },
           fontFamily: {
             sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            heading: ['"Instrument Serif"', 'serif'], 
           },
         }
       }
     }
   </script>
   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
     html { scroll-behavior: smooth; }
     .quote {
     @apply bg-white/60 border-l-4 border-darkblue/40 p-4 rounded-lg italic text-gray-800 shadow-sm;
   }
+
   </style>
 
   <!-- JSON-LD Structured Data -->
@@ -206,7 +211,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     <ul class="flex flex-col space-y-4 px-6 py-8 text-charcoal font-medium">
       <li><a href="#about" class="hover:text-primary transition">About</a></li>
       <li><a href="#services" class="hover:text-primary transition">Services</a></li>
-      <li><a href="#annual" class="hover:text-primary transition">Annual Path</a></li>
+      <li><a href="#annual" class="hover:text-primary transition">ADP</a></li>
       <li><a href="#pricing" class="hover:text-primary transition">Pricing</a></li>
       <li><a href="#booking" class="hover:text-primary transition">Book</a></li>
     </ul>
@@ -214,9 +219,9 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 </nav>
 
     <!-- Header Image -->
-    <img src="design-sidekick-logo-wide.png" alt="Design illustration" class="mx-auto px-8 py-12 w-full pt-24">
+    <img src="design-sidekick-logo-wide.png" alt="Design illustration" class="mx-auto px-8 py-12 w-full pt-24 md:w-2/3">
 
-<div class="flex justify-between items-end px-4">
+<div class="flex justify-center items-end gap-2 px-4">
   <img src="/images/two-people-working-on-a-laptop-one-looks-worried.png" alt="Two people working on a laptop" class="w-[100px] h-auto">
  
   <img src="/images/girl-pointing-at-board.png" alt="Description of third image" class="w-[60px] h-auto">
@@ -228,17 +233,17 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     <p class="text-white p-4 text-sm bg-darkblue md:mx-auto  ml-6 mr-6 pb-4 max-w-4xl md:max-w-2xl rounded-b-2xl "><strong>Level up</strong> your design from entry to pro with clear, personalised direction</p>
   </header>
 
-
+ <blockquote class="px-8 mx-auto max-w-xl justify-center italic font-bold text-primary smt-4 mt-12 text-center">This isn't just feedback - it's a strategic mentorship session designed to accelerate your growth.</blockquote>
 
   <!-- About Section -->
   
     <section id="about" class="pt-20 mb-12 px-8 md:px-16 max-w-4xl mx-auto">
       <span class="text-white bg-secondary py-2 text-sm px-4 ">About</span>
     
-    <h2 class="mt-6 text-3xl font-semibold mb-6 text-primary">Why work with me?</h2>
+    <h2 class="font-heading mt-6 text-4xl font-semibold mb-6 text-darkblue">Why work with me?</h2>
       
-    <blockquote class="max-w-2xl  justify-center italic text-primary smt-4 mb-4">My feedback is direct, structured, and sharpens your instincts, designer-to-designer</blockquote>
-    <p class="mb-4">For over 20 years, I've designed across print, digital, web, and accessibility projects for government, corporate, and creative clients. I'm experienced in WCAG and accessibility standards, inclusive design, and both legacy and modern platforms. My sessions provide tailored, in-depth critiques that help you refine your work, improve quality and consistency, and advance your skills. Combining gentle clarity with professional precision, you'll always get honest, structured feedback that helps you grow without feeling overwhelmed.</p>
+    <blockquote class="max-w-2xl justify-center italic text-primary smt-4 mb-4">My feedback is direct, structured, and sharpens your instincts, designer-to-designer.</blockquote>
+    <p class="mb-4">For over 20 years, I've designed across print, digital, web, and accessibility projects for government, corporate, and creative clients, including the City of London Corporation, TfL, and Mott MacDonald. I'm experienced in WCAG and accessibility standards, inclusive design, and both legacy and modern platforms. My sessions provide tailored, in-depth critiques that help you refine your work, improve quality and consistency, and advance your skills. Combining gentle clarity with professional precision, you'll always get honest, structured feedback that helps you grow without feeling overwhelmed.</p>
     <p class="mb-4">Whether you're improving your portfolio, refining individual pieces, or seeking professional insight, these sessions deliver actionable value every time.</p>
     
 <blockquote class="max-w-2xl italic text-primary mt-4 mb-4">
@@ -246,12 +251,12 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 </blockquote>
 
 
-    <h3 class="mt-8 text-2xl font-semibold mb-6 text-secondary">My 3-part feedback framework</h3>
+    <h3 class="font-heading mt-8 text-2xl font-semibold mb-6 text-secondary">My 3-part feedback framework</h3>
 <ol class="list-decimal list-inside">
       <li class="mb-2"><strong>Clarity</strong> What are you really trying to communicate?</li>
-<li class="mb-2"><strong>Craft</strong> Composition, typography, hierarchy
+<li class="mb-2"><strong>Craft</strong> Composition, typography, hierarchy.
 </li>
-<li class="mb-2"><strong>Challenge</strong> The pro-level push that expands your instincts</li>
+<li class="mb-2"><strong>Challenge</strong> The pro-level push that expands your instincts.</li>
 </ol>
 
      <img src="/images/two-people-discussing-project.png" alt="Design illustration" class="mt-4 ml-auto w-[300px] h-auto">
@@ -259,15 +264,15 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 
   <!-- Services Section -->
   <section id="services" class="py-8 px-4 md:px-16 max-w-4xl mx-auto">
-    <div class="bg-darkblue border-2 border-darkblue rounded-2xl shadow-xl p-10 relative overflow-hidden">
+    <div class="bg-darkblue border-2 border-darkblue rounded-2xl shadow-xl p-8 relative overflow-hidden">
 <span class="text-white bg-secondary py-2 text-sm px-4 ">Services</span>    
-<h2 class="text-3xl font-semibold mt-6 mb-12 text-center text-offwhite">Session options</h2>
+<h2 class="font-heading text-4xl font-semibold mt-6 mb-12 text-center text-offwhite">Session options</h2>
     <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
       <!-- Deep Critique -->
       <div class="bg-offwhite p-6 border-2 border-primary rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
         <h3 class="text-xl font-bold mb-2 text-primary">Deep Critique & Direction</h3>
         <p class="mb-2 font-semibold">45 min - £200</p>
-        <p class="mb-4">A senior-level audit of your portfolio or up to 3 pieces. You’ll get clear direction, expert analysis, and a structured plan to develop your work to a higher standard.</p>
+        <p class="mb-4">A senior-level audit of your portfolio or up to 3 pieces. You'll get clear direction, expert analysis, and a structured plan to develop your work to a higher standard.</p>
       </div>
       <!-- Follow-Up -->
       <div class="bg-offwhite p-6 border-2 border-secondary rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
@@ -284,8 +289,8 @@ silktideCookieBannerManager.updateCookieBannerConfig({
     </div>
 
   <!-- Booking Section -->
-  <section class="md:px-16 max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl font-semibold mt-6 mb-6 text-accent1">Book your session</h2>
+  <section class="md:px-16 max-w-3xl mx-auto text-center mb-4">
+    <h2 class="font-heading text-4xl font-semibold mt-6 mb-6 text-accent1">Book your session</h2>
     <p class="mb-12 text-offwhite">Choose the session that suits your needs and book a time online. Sessions are conducted online and flexible to your schedule.</p>
    
     <a href="https://calendly.com/design-sidekick" target="_blank" class="bg-primary text-offwhite px-10 py-4 rounded-xl font-semibold hover:bg-secondary transition">Book a Session</a>
@@ -302,7 +307,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
 
   <span class="text-white bg-secondary py-2 text-sm px-4 ">ADP</span>
 
-    <h2 class="text-3xl font-semibold mt-6 mb-12 text-center text-primary">Annual Development Path</h2>
+    <h2 class="font-heading text-4xl font-semibold mt-6 mb-4 text-center text-primary">Annual Development Path</h2>
     <p class="text-center mb-16">A structured 4-session journey designed to help you grow consistently over a year. Built for designers aiming to move from entry/mid-level to near-senior quality with long-term guidance, checkpoints, and practical skill-building.</p>
 
    <div class="relative w-full flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-2">
@@ -319,7 +324,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
       <div class="relative z-10 flex flex-col items-center text-center group">
         <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg transition-transform group-hover:scale-110">2</div>
         <h3 class="text-xl font-semibold mt-4 text-secondary">Follow-Up</h3>
-        <p class="text-charcoal mt-1 text-sm">Month 2-3 - £150</p>
+        <p class="text-charcoal mt-1 text-sm">Month 2-5 - £150</p>
       </div>
 
       <!-- Session 3 -->
@@ -332,7 +337,7 @@ silktideCookieBannerManager.updateCookieBannerConfig({
       <!-- Session 4 -->
       <div class="relative z-10 flex flex-col items-center text-center group">
         <div class="w-16 h-16 bg-darkblue rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg transition-transform group-hover:scale-110">4</div>
-        <h3 class="text-xl font-semibold mt-4 text-darkblue">Year-End Polish</h3>
+        <h3 class="text-xl font-semibold mt-4 text-darkblue">Year-End Review</h3>
         <p class="text-charcoal mt-1 text-sm">Month 10-12 - £150</p>
       </div>
     </div>
@@ -351,22 +356,26 @@ silktideCookieBannerManager.updateCookieBannerConfig({
       <div class="bg-offwhite border-2 border-accent2 rounded-2xl shadow-xl p-10 relative overflow-hidden">
            <span class="text-white bg-secondary py-2 text-sm px-4 ">Pricing</span>
 
-    <h2 class="mt-4 text-3xl font-semibold mb-4 text-primary">Why these rates?</h2>
-    <p class="mb-4">You're not paying for generic advice - you're paying for senior-level critique shaped by real industry experience. The first session is a deep dive into your work. Guided by 20+ years of professional design experience, you'll get actionable strategies to refine your skills, elevate your work, and create a roadmap for professional growth.</p>
+    <h2 class="font-heading mt-4 text-4xl font-semibold mb-4 text-primary">Why these rates?</h2>
+    <p class="mb-4">You're not paying for generic advice - you're paying for senior-level critique shaped by real industry experience.</p> 
+    <p class="mb-4">The first session is a deep dive into your work. Guided by 20+ years of professional design experience, you'll get actionable strategies to refine your skills, elevate your work, and create a roadmap for professional growth.</p>
     <p class="mb-4">Follow-up sessions focus on refinement and progression - still senior-level insight, but less prep time.</p>
-    <p>Each session is a strategic investment in your creative development.</p> 
+    <p class="font-semibold">Each session is a strategic investment in your creative development.</p> 
     <img src="/images/happy-girl-crossed-arms-with-3-star-certificate-graph.png" alt="Design illustration" class="ml-auto w-[200px] h-auto">
   </div>
   </section>
 
-  <div id="booking" class="pt-24 mb-12 px-8 md:px-16 max-w-4xl mx-auto">
+  <div id="booking" class="pt-20 mb-12 px-8 md:px-16 max-w-4xl mx-auto">
       <span class="text-white bg-secondary py-2 text-sm px-4">Book</span>
 
-  <h2 class="mt-6 text-3xl font-semibold mb-6 text-center text-primary">Book your session</h2>
-  <p class="text-center text-charcoal">Pick a time that works for you. Confirmation emails will be sent automatically.</p>
+  <h2 class="font-heading mt-6 text-3xl font-semibold mb-6 text-primary">Book your session</h2>
+  <p class="text-charcoal mb-4">The first session is a full, high-impact review. I'll identify the gaps in your work that keep it from looking professional, provide actionable solutions, and create a roadmap to bring your projects and portfolio up to senior-level standards.</p>
+  <p class="mb-4">
+Follow-up sessions continue that momentum at a focused, efficient pace.</p>
+<p class="font-semibold">Pick a time that works for you. Confirmation emails will be sent automatically.</p>
 
   <!-- Calendly Free Embed -->
-  <div class="calendly-inline-widget mt-1" data-url="https://calendly.com/design-sidekick" style="min-width:320px;height:630px;"></div>
+  <div class="calendly-inline-widget mt-1 mb-24" data-url="https://calendly.com/design-sidekick" style="min-width:320px;height:630px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </div>
 
