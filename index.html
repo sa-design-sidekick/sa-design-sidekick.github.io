@@ -43,6 +43,9 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
+    .quote {
+    @apply bg-white/60 border-l-4 border-darkblue/40 p-4 rounded-lg italic text-gray-800 shadow-sm;
+  }
   </style>
 
   <!-- JSON-LD Structured Data -->
@@ -72,7 +75,7 @@
     <img src="design-sidekick-logo-wide.png" alt="Design illustration" class="mx-auto px-8 py-8 w-full pt-24">
 
     <h1 class="text-primary bg-darkblue pt-4 text-2xl pb-2 md:text-4xl font-bold">Design Sidekick</h1>
-    <p class="text-white bg-darkblue md:mx-auto  ml-4 mr-4 pb-4 max-w-4xl md:max-w-2xl rounded-b-2xl "><strong>Level up</strong> your design from entry to pro</p>
+    <p class="text-white p-4 text-sm bg-darkblue md:mx-auto  ml-4 mr-4 pb-4 max-w-4xl md:max-w-2xl rounded-b-2xl "><strong>Level up</strong> your design from entry to pro with clear, personalised direction</p>
   </header>
 
   <!-- Navigation -->
@@ -101,7 +104,7 @@
 
   <!-- Mobile Menu (hidden by default) -->
   <div id="mobile-menu" class="hidden md:hidden bg-white">
-    <ul class="flex flex-col space-y-4 px-6 py-4 text-charcoal font-medium">
+    <ul class="flex flex-col space-y-4 px-6 py-8 text-charcoal font-medium">
       <li><a href="#about" class="hover:text-primary transition">About</a></li>
       <li><a href="#services" class="hover:text-primary transition">Services</a></li>
       <li><a href="#annual" class="hover:text-primary transition">Annual Path</a></li>
@@ -114,16 +117,31 @@
 
 
   <!-- About Section -->
-  <section id="about" class="pt-24 py-16 px-10 md:px-16 max-w-4xl mx-auto">
+  <section id="about" class="pt-24 py-8 px-10 md:px-16 max-w-4xl mx-auto">
     <span class="text-white bg-secondary py-2 text-sm px-4 ">About</span>
     <h2 class="mt-4 text-3xl font-semibold mb-6 text-primary">Why work with me?</h2>
-    <p class="mb-4">Over 20 years, I've designed across print, digital, web, and accessibility projects for government, corporate, and creative clients. I'm experienced in WCAG and accessibility standards, inclusive design, and both legacy and modern platforms. My sessions provide tailored, in-depth critiques that help you refine your work, improve quality and consistency, and advance your skills.</p>
+    <blockquote class="max-w-2xl  justify-center italic text-primary smt-4 mb-4">My feedback is direct, structured, and sharpens your instincts, designer-to-designer</blockquote>
+    <p class="mb-4">For over 20 years, I've designed across print, digital, web, and accessibility projects for government, corporate, and creative clients. I'm experienced in WCAG and accessibility standards, inclusive design, and both legacy and modern platforms. My sessions provide tailored, in-depth critiques that help you refine your work, improve quality and consistency, and advance your skills. Combining gentle clarity with professional precision, you'll always get honest, structured feedback that helps you grow without feeling overwhelmed.</p>
     <p class="mb-4">Whether you're improving your portfolio, refining individual pieces, or seeking professional insight, these sessions deliver actionable value every time.</p>
-     <img src="images/two-people-discussing-project.png" alt="Design illustration" class="ml-auto w-[200px] h-auto">
+    
+<blockquote class="max-w-2xl italic text-primary mt-4 mb-4">
+  My role is to help you sharpen your judgement while keeping the confidence-building, supportive space you need to progress.
+</blockquote>
+
+
+    <h3 class="mt-8 text-2xl font-semibold mb-6 text-secondary">My 3-part feedback framework</h3>
+<ol class="list-decimal list-inside">
+      <li class="mb-2"><strong>Clarity</strong> What are you really trying to communicate?</li>
+<li class="mb-2"><strong>Craft</strong> Composition, typography, hierarchy
+</li>
+<li class="mb-2"><strong>Challenge</strong> The pro-level push that expands your instincts</li>
+</ol>
+
+     <img src="/images/two-people-discussing-project.png" alt="Design illustration" class="mt-4 ml-auto w-[300px] h-auto">
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-16 px-4 md:px-16 max-w-4xl mx-auto">
+  <section id="services" class="py-8 px-4 md:px-16 max-w-4xl mx-auto">
     <div class="bg-darkblue border-2 border-darkblue rounded-2xl shadow-xl p-10 relative overflow-hidden">
 <span class="text-white bg-secondary py-2 text-sm px-4 ">Services</span>    
 <h2 class="text-3xl font-semibold mt-6 mb-12 text-center text-offwhite">Session options</h2>
@@ -132,19 +150,19 @@
       <div class="bg-offwhite p-6 border-2 border-primary rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
         <h3 class="text-xl font-bold mb-2 text-primary">Deep Critique & Direction</h3>
         <p class="mb-2 font-semibold">45 min - £200</p>
-        <p class="mb-4">Full review of your portfolio or up to 3 pieces. Identify gaps, refine your work, and create a roadmap to professional-level quality.</p>
+        <p class="mb-4">A senior-level audit of your portfolio or up to 3 pieces. You’ll get clear direction, expert analysis, and a structured plan to develop your work to a higher standard.</p>
       </div>
       <!-- Follow-Up -->
       <div class="bg-offwhite p-6 border-2 border-secondary rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
         <h3 class="text-xl font-bold mb-2 text-secondary">Follow-Up Critique</h3>
         <p class="mb-2 font-semibold">45 min - £150</p>
-        <p class="mb-4">Focused review of updated work, refinement of skills, and tracking your progression.</p>
+        <p class="mb-4">Refinement-focused sessions to track your progress, correct issues, and strengthen design thinking over time.</p>
       </div>
       <!-- Quick Review -->
       <div class="bg-offwhite p-6 border-2 border-accent2 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
         <h3 class="text-xl font-bold mb-2 text-accent2">Quick Review / Mini Feedback</h3>
         <p class="mb-2 font-semibold">20 min - £75</p>
-        <p class="mb-4">Fast, focused feedback on one piece or a specific correction. Ideal for checking revisions between full sessions.</p>
+        <p class="mb-4">Fast, precise feedback for a single piece or revision. Ideal between full sessions.</p>
       </div>
     </div>
 
@@ -161,14 +179,14 @@
   </section>
 
   <!-- Annual Path -->
-<section id="annual" class="py-16 px-4 md:px-16 max-w-4xl mx-auto">
+<section id="annual" class="py-8 px-4 md:px-16 max-w-4xl mx-auto">
 
   <div class="bg-offwhite border-2 border-accent1 rounded-2xl shadow-xl p-10 relative overflow-hidden">
 
   <span class="text-white bg-secondary py-2 text-sm px-4 ">ADP</span>
 
     <h2 class="text-3xl font-semibold mt-6 mb-12 text-center text-primary">Annual Development Path</h2>
-    <p class="text-center mb-16">Four sessions over a year designed to take your work from entry/mid-level to near senior/pro quality.</p>
+    <p class="text-center mb-16">A structured 4-session journey designed to help you grow consistently over a year. Built for designers aiming to move from entry/mid-level to near-senior quality with long-term guidance, checkpoints, and practical skill-building.</p>
 
    <div class="relative w-full flex flex-col md:flex-row justify-between items-center md:items-start gap-8 md:gap-2">
 
@@ -204,27 +222,27 @@
 
     <p class="text-center mt-12 font-semibold text-lg">Total for annual path: £650</p>  
     
-    <img src="images/two-girls-working-on-a-laptop.png" alt="Design illustration" class="pt-8 ml-auto w-[200px] h-auto">
+    <img src="/images/two-girls-working-on-a-laptop.png" alt="Design illustration" class="pt-8 ml-auto w-[200px] h-auto">
   </div>
 </section>
 
 
 
   <!-- Why This Price -->
-<section id="pricing" class="py-16 px-4 md:px-16 max-w-4xl mx-auto">
+<section id="pricing" class="py-8 px-4 md:px-16 max-w-4xl mx-auto">
 
       <div class="bg-offwhite border-2 border-accent2 rounded-2xl shadow-xl p-10 relative overflow-hidden">
            <span class="text-white bg-secondary py-2 text-sm px-4 ">Pricing</span>
 
     <h2 class="mt-4 text-3xl font-semibold mb-4 text-primary">Why these rates?</h2>
-    <p class="mb-4">The first session is a deep dive into your work. Guided by 20+ years of professional design experience,, you'll get actionable strategies to refine your skills, elevate your work, and create a roadmap for professional growth.</p>
-    <p class="mb-4">Follow-up sessions focus on refinement and progression — still senior-level insight, but less prep time.</p>
+    <p class="mb-4">You're not paying for generic advice - you're paying for senior-level critique shaped by real industry experience. The first session is a deep dive into your work. Guided by 20+ years of professional design experience, you'll get actionable strategies to refine your skills, elevate your work, and create a roadmap for professional growth.</p>
+    <p class="mb-4">Follow-up sessions focus on refinement and progression - still senior-level insight, but less prep time.</p>
     <p>Each session is a strategic investment in your creative development.</p> 
-    <img src="images/happy-girl-crossed-arms-with-3-star-certificate-graph.png" alt="Design illustration" class="ml-auto w-[200px] h-auto">
+    <img src="/images/happy-girl-crossed-arms-with-3-star-certificate-graph.png" alt="Design illustration" class="ml-auto w-[200px] h-auto">
   </div>
   </section>
 
-  <div  id="booking" class="pt-24 mb-12 py-16 px-8 md:px-16 max-w-4xl mx-auto">
+  <div id="booking" class="pt-24 mb-12 px-8 md:px-16 max-w-4xl mx-auto">
       <span class="text-white bg-secondary py-2 text-sm px-4">Book</span>
 
   <h2 class="mt-6 text-3xl font-semibold mb-6 text-center text-primary">Book your session</h2>
@@ -234,8 +252,10 @@
   <div class="calendly-inline-widget mt-1" data-url="https://calendly.com/design-sidekick" style="min-width:320px;height:630px;"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </div>
+
+<!-- Footer-->
 <footer class="fixed bottom-0 left-0 w-full bg-darkblue text-white shadow-[0_-4px_12px_rgba(0,0,0,0.15)] z-50">
-  <div class="max-w-4xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
+  <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
 
     <div class="flex w-full sm:w-auto justify-center sm:justify-end gap-3">
 
@@ -284,11 +304,20 @@
                 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
         </svg>Contact</a>`;
 
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
+const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileLinks = mobileMenu.querySelectorAll("a"); // all links inside mobile menu
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+  // Toggle mobile menu on button click
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  // Close mobile menu when any link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
   });
 </script>
 
